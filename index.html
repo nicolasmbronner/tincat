@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/tincat.ico">
+  <title>TinCat</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Font-Awesome -->
+  <script src="https://kit.fontawesome.com/a4756bc53c.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 5.2.2 for HTML - CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--
+    Très important de mettre ce lien APRES celui de Bootstrap, ainsi, mes règles
+    perso de CSS s'appliquent en DERNIER et s'appliquent donc PAR DESSUS ceux de Bootstrap. -->
+</head>
+
+
+
+<body>
+
+  <!-- ######## TITLE SECTION ######## -->
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- NAV BAR -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Cette navbar est transparente et suit donc la couleur de fond.
+        Le fait qu'elle soit 'dark' fait que le texte est en blanc (donc besoin background foncé).
+        Le fait qu'elle soit en expand-lg et pas juste expand fait que lorsque l'écran est plus grand que le breakpoint lg, la
+        navbar s'affiche de façon étendue. A contrario, plus petit que lg, et c'est le bouton défini plus bas qui va s'afficher
+        en cachant les éléments. -->
+        <a class="navbar-brand" href="">tincat</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- TITLE -->
+
+      <div class="row row-cols-1 row-cols-lg-2">
+        <!--
+        - Taille smartphone + tablette = 1 colonne par ligne
+        - Taille suppérieure tablette = 2 colonnes par ligne -->
+        <div class="col">
+          <h1 class="big-heading">Meet new and interesting cats nearby.</h1>
+          <button class="btn btn-dark btn-lg title-btn" type="button"><i class="fa-brands fa-apple"></i> Download</button>
+          <!-- Le bouton contient l'icone 'Font Awesome' d'Apple -->
+          <button class="btn btn-outline-light btn-lg" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+          <!-- Le bouton contient l'icone 'Font Awesome' de Google Play -->
+        </div>
+
+        <div class="col">
+          <img class="title-image" src="images/phone-mockup.png" alt="phone-mockup">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ######## FEATURES SECTION ######## -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+
+      <!-- Easy to Use - Feature -->
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col feature">
+          <i class="fa-solid fa-circle-check fa-4x feature-icon"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p class="feature-description">So easy to use, even your cat could do it.</p>
+        </div>
+
+        <!-- Elite Clientelle - Feature -->
+        <div class="col feature">
+          <i class="fa-solid fa-bullseye fa-4x feature-icon"></i>
+          <h3 class="feature-title">Elite clientele.</h3>
+          <p class="feature-description">We have all the cats, the greatest cats.</p>
+        </div>
+
+        <!-- Guaranteed to Work - Feature -->
+        <div class="col feature">
+          <i class="fa-solid fa-heart fa-4x feature-icon"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p class="feature-description">Find the love of your cat's life or your money back.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ######## TESTIMONIALS SECTION ######## -->
+
+  <section class="colored-section salmon-color"id="testimonials">
+
+    <!-- carousel -->
+
+    <div id="testimonial-carousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">I no longer have to sniff other cats for love. I've found the hottest Persian on TinCat. Prrr.</h2>
+          <img class="testimonial-image" src="images/cat-img.png" alt="cat-profile">
+          <em>Chatran, London</em>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My cat used to be so lonely, but with TinCat's help, they've found the love of their life.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Emily, Illinois</em>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+
+
+  <!-- ######## PRESS SECTION ######## -->
+
+  <section class="colored-section salmon-color"id="press">
+
+    <img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+
+  <!-- ######## PRICING SECTION ######## -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">A Plan for Every Cat's Needs</h2>
+    <p>Simple and affortable price plans for you and your cat.</p>
+
+    <div class="row">
+
+      <!-- Free Plan -->
+      <div class="pricing-column col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Kitty</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intermediate Plan -->
+      <div class="pricing-column col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Lynx</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">€4 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Sign up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium PLan -->
+      <div class="pricing-column col-12 col-sm-12 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Lion</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">€10 / mo</h2>
+            <p>Priority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ######## CALL TO ACTION SECTION ######## -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+      <h3 class="big-heading">Find the True Love of Your Cat's Life Today</h3>
+      <button class="btn btn-dark btn-lg title-btn" type="button"><i class="fa-brands fa-apple"></i> Download</button>
+      <!-- Le bouton contient l'icone 'Font Awesome' d'Apple -->
+      <button class="btn btn-light btn-lg" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+      <!-- Le bouton contient l'icone 'Font Awesome' de Google Play -->
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ######## FOOTER SECTION ######## -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+
+      <!-- Icône Twitter -->
+      <a href=""><i class="social-icon fa-brands fa-twitter"></i></a>
+
+      <!-- Icône Facebook -->
+      <a href=""><i class="social-icon fa-brands fa-facebook"></i></a>
+
+      <!-- Icône Instagram -->
+      <a href=""><i class="social-icon fa-brands fa-instagram"></i></a>
+
+      <!-- Icône Enveloppe (mail) -->
+      <a href=""><i class="social-icon fa-solid fa-envelope"></i></a>
+
+      <p>© Copyright 2022 TinCat</p>
+    </div>
+
+
+  </footer>
+
+
+
+  <!-- Bootstrap 5.2.2 for Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
